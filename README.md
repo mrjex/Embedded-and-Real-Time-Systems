@@ -56,7 +56,9 @@ In the later workpackages *(3-6)*, as we had gained knowledge of the basic funda
 
 Work Package 5:
 
-![wp-5.demo](code/workpackages/WP5/WP5%20-%20Video.mp4)
+[![WP5-Demo](https://img.youtube.com/vi/cBz7y6pFOdA/maxresdefault.jpg)](https://www.youtube.com/watch?v=cBz7y6pFOdA)
+
+
 
 Work Package 6:
 
