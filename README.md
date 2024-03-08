@@ -1,69 +1,128 @@
-# 5. Development of Embedded & Real-Time Systems
+# 🔧 Development of Embedded & Real-Time Systems
 
-I attended this course in `January - March 2024` and coded in a group with 2 other students. We were given 6 coding assignments denoted as *Work Packages* with an extra submission for each package to get bonus points, followed with a joint presentation with the University's teaching assistants. These tasks concerned aspects of C and C++ programming as well as Tinkercad, and ultimately in the end of the course it extended to replacing what we simulated in Tinkercad with real hardware reliable components. Fortunately, I had previous experience with C and C++ with Arduino in the following projects:
+> Exploring embedded systems programming through C/C++, TinkerCad, and hardware implementation
 
-- [Problem Solving, C-Programming](https://gitlab.com/jex-projects/mrjex/-/tree/main/problem-solving/3.%20C-Programming?ref_type=heads)
+[![C](https://img.shields.io/badge/C-Programming-blue)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![C++](https://img.shields.io/badge/C++-Programming-purple)](https://en.wikipedia.org/wiki/C%2B%2B)
+[![TinkerCad](https://img.shields.io/badge/TinkerCad-Simulation-orange)](https://www.tinkercad.com/)
+[![Hardware](https://img.shields.io/badge/Hardware-Implementation-green)](https://www.arduino.cc/)
 
-- [Systems Development](https://gitlab.com/jex-projects/mrjex/-/tree/main/projects/1.%20courses/year-1/7.%20Systems%20Development/WioPlay/seeed-wio-terminal/WioPlay?ref_type=heads)
+## 📑 Table of Contents
+- [🔧 Development of Embedded \& Real-Time Systems](#-development-of-embedded--real-time-systems)
+  - [📑 Table of Contents](#-table-of-contents)
+  - [🎯 Overview](#-overview)
+  - [💡 Core Concepts](#-core-concepts)
+    - [📍 Pointers](#-pointers)
+      - [Function Pointers](#function-pointers)
+      - [Sorting Algorithms](#sorting-algorithms)
+    - [🧮 Memory Management](#-memory-management)
+      - [Dynamic Memory Allocation](#dynamic-memory-allocation)
+      - [Static Memory Allocation](#static-memory-allocation)
+    - [⚡ Bitwise Operations](#-bitwise-operations)
+    - [💾 Local Database Implementation](#-local-database-implementation)
+    - [🔗 Linked List Implementation](#-linked-list-implementation)
+  - [🛠 Hardware Integration](#-hardware-integration)
+    - [TinkerCad Simulation (Work Packages 3-6)](#tinkercad-simulation-work-packages-3-6)
+    - [Work Package 5 Demo](#work-package-5-demo)
+    - [Work Package 6 Implementation](#work-package-6-implementation)
+  - [🔗 Related Experience](#-related-experience)
+    - [Data Structures \& Algorithms](#data-structures--algorithms)
+  - [Related Experiences](#related-experiences)
 
+## 🎯 Overview
 
-## Pointers
+This project was developed during January - March 2024 in collaboration with two other students. The course consisted of 6 comprehensive work packages focusing on:
+- Advanced C/C++ programming concepts
+- TinkerCad simulation
+- Hardware implementation
+- Real-time system development
 
-A pointer is a variable that stores the memory address of another variable as its value. This is usually a confusing concept for people getting started with C or C++. My first real assigned task with pointers can be found in `/code/workpackages/exercise4`. Furthermore, my first *Bonus Point* assignment involving pointers is located in `/code/bonus-points/bp-1`, and the vast majority of my spare time projects in `/code/spare-time-practice` are based on pointers.
+## 💡 Core Concepts
 
-### Function Pointers
+### 📍 Pointers
+Pointers are variables storing memory addresses of other variables. Key implementations include:
+- Basic pointer operations (`/code/workpackages/exercise4`)
+- Bonus point assignments (`/code/bonus-points/bp-1`)
+- Advanced practice (`/code/spare-time-practice`)
 
-Since the conceptual idea of pointers is so simplistic (storage of memory address tied to a value), it is generalized to sub-branches and can be applied in many different forms. For instance, being able to point functions is made possible. In `/code/workpackages/WP2/E1` me and my group's application of this particular kind of pointers can be seen.
+#### Function Pointers
+Implementation of function pointers demonstrating:
+- Memory address manipulation
+- Function callbacks
+- Dynamic dispatch
+Location: `/code/workpackages/WP2/E1`
 
-### Sorting
+#### Sorting Algorithms
+Implementation of:
+- **Bubble Sort**: Simple comparison-based sorting
+- **Selection Sort**: In-place comparison sorting
+Location: `/code/workpackages/WP4/E4`
 
-As an exercise to get accustomed to pointers and their efficiency, we were tasked to program **Bubble Sort** and **Selection Sort** with a swapping function. Have a look at `/code/workpackages/WP4/E4` for more information. In [Data Structures & Algorithms](https://gitlab.com/jex-projects/mrjex/-/tree/main/projects/1.%20courses/year-1/5.%20Data%20Structures%20&%20Algorithms?ref_type=heads) I learned about these sorting algorithms as well as **Quick Sort** and **Merge Sort**.
+### 🧮 Memory Management
 
+#### Dynamic Memory Allocation
+- Runtime memory allocation using `malloc()` and `calloc()`
+- Datatype-specific allocation
+- Custom struct handling
+- Heap memory management
 
-## Memory Allocation
+#### Static Memory Allocation
+- Pre-execution memory allocation
+- Fixed memory allocation
+- Stack memory utilization
 
-In C programming, there are two important terms:
+### ⚡ Bitwise Operations
+Advanced bit manipulation including:
+- Base conversion pipeline
+- Binary operations
+- Hexadecimal conversion
+Location: `/code/workpackages/WP2/E4`
 
-**Dynamic Memory Allocation:** Allocate memory during run-time using using `malloc()` or `calloc()`. The important thing to keep in mind is that for each new memory allocation, the datatype must be specified and the number of such instances you want to add to the memory. In cases where you are dealing with customized datatypes such as structs, you must specify the struct.
+### 💾 Local Database Implementation
+Binary file operations including:
+- CRUD operations
+- Struct-based data storage
+- File handling
+Location: `/code/workpackages/WP2/E3`
 
-**Static Memory Allocation:** Allocate memory before the script is being executed. Always a fixed value and garantees to possibility for memory leaks to the heap.
+### 🔗 Linked List Implementation
+Advanced data structure implementation:
+- Pointer-based node connections
+- Custom struct integration
+- Dynamic memory management
+Location: `/code/WP2/E2`
 
+## 🛠 Hardware Integration
 
-## Bitwise Operators
+### TinkerCad Simulation (Work Packages 3-6)
+Progressive development from software to hardware:
+- Circuit design
+- Component integration
+- Real-time simulation
 
-I also learned how to perform actions on bits, using a base-2 system. I practiced these operators a lot in `/code/spare-time-practice`, and applied the knowledge in several workpackages. It's also worth noting that these kind of operators were used in `/code/workpackages/WP2/E4` to convert numbers between bases in a pipeline of two **.c** files in the following sequence:
-
-- *decimal --> binary --> hexadecimal*
-
-
-## Local Database File
-
-In one of the exercises in a workpackage, we were required to store information in a **.bin** file and depending on the user's interactions, delete, override, add or modify, retrieve all instances or retrieve filtered instances. This binary database stored *Persons*, which I created a struct for that in turn stores 3 distinct strings (character arrays) for first name, last name and id. Have a look at `/code/workpackages/WP2/E3` for more information.
-
-
-## Linked Lists
-
-Using the basic principle of pointers and their ability to point to a memory address, we can turn it into a *Linked List* data structure with easy. In a few of my practice-sessions and workpackages I used customized datatypes of structs with pointers and letting them point to other struct objects. Have a look at `/code/WP2/E2` for more information. My other experiences with linked lists can be seen below:
-
-- [Data Structures & Algorithms](https://gitlab.com/jex-projects/mrjex/-/tree/main/projects/1.%20courses/year-1/5.%20Data%20Structures%20&%20Algorithms?ref_type=heads)
-
-- [Problem Solving, C-Programming, Linked Lists](https://gitlab.com/jex-projects/mrjex/-/tree/main/problem-solving/3.%20C-Programming/linked-lists?ref_type=heads)
-
-
-## TinkerCad & Hardware
-
-In the later workpackages *(3-6)*, as we had gained knowledge of the basic fundamentals of C-programming, we were introduced to TinkerCad tasks, and eventually we had the chance to use hardware to simulate our programmed systems independent of any software interactions.
-
-Work Package 5:
-
+### Work Package 5 Demo
 [![WP5-Demo](https://img.youtube.com/vi/cBz7y6pFOdA/maxresdefault.jpg)](https://www.youtube.com/watch?v=cBz7y6pFOdA)
 
-
-
-Work Package 6:
-
+### Work Package 6 Implementation
+Circuit Design:
 ![wp-6-picture](code/workpackages/WP6/E2/E2_circuit.png)
 
+Live Demo:
 ![wp-6-demo](code/workpackages/WP6/E2/E2_demo.mp4)
 
-Take a deeper look into the workpackages in `/code/workpackages`
+## 🔗 Related Experience
+
+### Data Structures & Algorithms
+- [Advanced Algorithm Implementation](https://gitlab.com/jex-projects/mrjex/-/tree/main/projects/1.%20courses/year-1/5.%20Data%20Structures%20&%20Algorithms?ref_type=heads)
+- [C Programming & Linked Lists](https://gitlab.com/jex-projects/mrjex/-/tree/main/problem-solving/3.%20C-Programming/linked-lists?ref_type=heads)
+
+
+## Related Experiences
+
+- [C-Programming](https://github.com/mrjex/C-Programming)
+- [WioPlay](https://github.com/Indomet/WioPlay)
+
+
+---
+
+*Developed with by Joel Mattsson, Mohamad Khalil and Nasit Vurgun for embedded systems*
