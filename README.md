@@ -101,7 +101,7 @@ Progressive development from software to hardware:
 - Real-time simulation
 
 ### Work Package 5 Demo
-[![WP5-Demo](https://img.youtube.com/vi/cBz7y6pFOdA/maxresdefault.jpg)](https://www.youtube.com/watch?v=cBz7y6pFOdA)
+[![WP5-Demo](https://img.youtube.com/vi/lCK2sM60OZU/maxresdefault.jpg)](https://www.youtube.com/watch?v=lCK2sM60OZU)
 
 ### Work Package 6 Implementation
 Circuit Design:
