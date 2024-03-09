@@ -41,22 +41,22 @@ This project was developed during January - March 2024 in collaboration with two
 
 ### 📍 Pointers
 Pointers are variables storing memory addresses of other variables. Key implementations include:
-- Basic pointer operations (`/code/workpackages/exercise4`)
-- Bonus point assignments (`/code/bonus-points/bp-1`)
-- Advanced practice (`/code/spare-time-practice`)
+- Basic pointer operations (`/workpackages/exercise4`)
+- Bonus point assignments (`/bonus-points/bp-1`)
+- Advanced practice (`/spare-time-practice`)
 
 #### Function Pointers
 Implementation of function pointers demonstrating:
 - Memory address manipulation
 - Function callbacks
 - Dynamic dispatch
-Location: `/code/workpackages/WP2/E1`
+Location: `/workpackages/WP2/E1`
 
 #### Sorting Algorithms
 Implementation of:
 - **Bubble Sort**: Simple comparison-based sorting
 - **Selection Sort**: In-place comparison sorting
-Location: `/code/workpackages/WP4/E4`
+Location: `/workpackages/WP4/E4`
 
 ### 🧮 Memory Management
 
@@ -76,21 +76,21 @@ Advanced bit manipulation including:
 - Base conversion pipeline
 - Binary operations
 - Hexadecimal conversion
-Location: `/code/workpackages/WP2/E4`
+Location: `/workpackages/WP2/E4`
 
 ### 💾 Local Database Implementation
 Binary file operations including:
 - CRUD operations
 - Struct-based data storage
 - File handling
-Location: `/code/workpackages/WP2/E3`
+Location: `/workpackages/WP2/E3`
 
 ### 🔗 Linked List Implementation
 Advanced data structure implementation:
 - Pointer-based node connections
 - Custom struct integration
 - Dynamic memory management
-Location: `/code/WP2/E2`
+Location: `/WP2/E2`
 
 ## 🛠 Hardware Integration
 
@@ -105,10 +105,12 @@ Progressive development from software to hardware:
 
 ### Work Package 6 Implementation
 Circuit Design:
-![wp-6-picture](code/workpackages/WP6/E2/E2_circuit.png)
+![wp-6-picture](workpackages/WP6/E2/E2_circuit.png)
 
 Live Demo:
-![wp-6-demo](code/workpackages/WP6/E2/E2_demo.mp4)
+
+[![WP6-Demo](https://img.youtube.com/vi/Bfz1klDoJik/maxresdefault.jpg)](https://www.youtube.com/watch?v=Bfz1klDoJik)
+
 
 ## 🔗 Related Experience
 
